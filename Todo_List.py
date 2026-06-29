@@ -1,20 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[11]:
+# In[1]:
 
 
 import streamlit as st
-import os
-from openpyxl import load_workbook
-import easyocr
-from PIL import Image
-import numpy as nm
-from google import genai
-import pandas as pd
 
 
-# In[35]:
+# In[2]:
 
 
 task=st.text_input("Enter your task...")
@@ -28,6 +21,12 @@ if st.button('Add task!'):
         st.error('Enter task please')
 for e,s in enumerate(st.session_state['dd'],start=1):
     st.write(f"{e}.{s}")
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
